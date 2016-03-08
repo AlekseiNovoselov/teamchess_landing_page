@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Background images - fullPage.js</title>
+    <meta name="author" content="TeamChess" />
+    <meta name="description" content="Первое мобильное android приложение для игры в шведские шахматы онлайн с друзьями" />
+    <meta name="keywords"  content="шведские шахматы,шведка,teamchess,bughouse,командные шахматы,технопарк,mail.ru, team, chess" />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" type="text/css" href="css/jqueryFullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/my.css" />
+
+</head>
+<body>
+
+<ul id="menu">
+    <li data-menuanchor="main"><a href="#main">Главная</a></li>
+    <li data-menuanchor="about"><a href="#about">О проекте</a></li>
+    <li data-menuanchor="rules"><a href="#rules">Правила</a></li>
+    <li data-menuanchor="gameplay"><a href="#gameplay">Игровой процесс</a></li>
+    <li data-menuanchor="contacts"><a href="#contacts">Скачать</a></li>
+</ul>
+
+<div id="fullpage">
+    <div class="section" id="section_main">
+        <h1>Шведские шахматы</h1>
+        <h2>TeamChess</h2>
+        <p>Первое мобильное Приложение для игры в шведские шахматы online</p>
+    </div>
+    <div class="section" id="section_about">
+        <div class="slide" id="slide_handshake">
+            <div class="intro">
+                <h1>Командные</h1>
+                <p>Играйте с друзьями в одной команде и побеждайте вместе!</p>
+            </div>
+        </div>
+        <div class="slide" id="slide_sandglass">
+            <div class="intro">
+                <h1>Быстрые</h1>
+                <p>Режим сумасшедшего блица</p>
+            </div>
+        </div>
+        <div class="slide" id="slide_emotional">
+            <div class="intro">
+                <h1>Эмоциональные</h1>
+                <p>Напряжение на протяжении всей партии</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section " id="section_rules">
+        <div class="slide" id="slide_gear">
+            <div class="intro">
+                <img src="imgs/lobby_board.png" alt="simple" />
+                <img src="imgs/lobby_board.png" alt="simple" />
+                <h1>Как это работает?</h1>
+                <div style="text-align: left">
+                    <p>1) 1 партия, 2 доски, 4 игрока, 2 команды;</p>
+                    <p>2) В каждой команде один участник играет белыми, другой - чёрными фигурами;</p>
+                    <p>3) Игра идёт с контролем времени;</p>
+                    <p>4) Партнёры имеют возможность видеть позиции и время на обеих досках.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide_piece_captured">
+            <div class="intro">
+                <h1>Главный принцип</h1>
+                <div style="text-align: left">
+                    <p>1) Сбитую фигуру соперника игрок передает своему партнеру в резерв;</p>
+                    <p>2) Фигура из резерва может быть выставлена на доску вместо обычного хода.</p>
+
+                </div>
+                <h1>Условие победы</h1>
+                <div style="text-align: left">
+                    <p>Проигывает команда, игроку которой поставили мат, либо игрок, который первым просрочил время.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide_law">
+            <div class="intro">
+                <h1>Используемые правила</h1>
+                <div style="text-align: left">
+                    <p>1) Выставленной фигурой можно объявлять и <em>шах</em>, и <em>мат</em>;</p>
+                    <p>2) Пешку можно выставлять на любую горизонталь, кроме первой и последней;</p>
+                    <p>3) При превращении пешка объявляется желаемой фигурой.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide_ckeckmate">
+            <div class="intro">
+                <h1>Условие мата</h1>
+                <div style="text-align: left">
+                    <p> Если король находится под шахом и его невозможно ни увести,
+                        ни прикрыть фигурой с доски, однако при этом он в принципе может быть прикрыт
+                        выставлением фигуры из резерва (даже если в данный момент у игрока такой фигуры нет),
+                        такая позиция считается не <em>матом</em>, а <em>шахом</em>. В этом случае проигрыш не фиксируется.
+                        Игрок может зависнуть до получения нужной фигуры, выигрыша одной из сторон
+                        на другой доске или истечения времени. Матом признаётся только позиция,
+                        где король не может быть прикрыт от шаха никаким допустимым правилами способом
+                        (то есть когда шах дан конём, либо дающая шах фигура стоит вплотную к королю,
+                        либо шах дан одновременно двумя фигурами, от которых невозможно закрыть короля одним ходом).</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide_additional_rules">
+            <div class="intro">
+                <h1>Отличие от обычных шахмат</h1>
+                <div style="text-align: left">
+                    <p>1) Пешка, выставленная на поле второй горизонтали, имеет те же возможности хода,
+                        что и пешка, изначально стоящая на своей исходной позиции: она может первым ходом пойти на два поля;
+                        при таком ходе она может быть взята на проходе ответным ходом противника;</p>
+                    <p>2) Ладья, выставленная на крайнее поле первой горизонтали, может участвовать в рокировке,
+                        как никогда не ходившая.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section" id="section_gameplay">
+        <div class="fp-auto-height slide" >
+                <p>1. Начало игры online</p>
+                <img src="imgs/gifs/lobby.gif" alt="Пример в приложении" class="gif" />
+        </div>
+
+        <div class="fp-auto-height slide">
+            <p>2. Наблюдай за соседней доской</p>
+            <img src="imgs/gifs/swipe.gif" alt="Пример в приложении" class="gif"/>
+        </div>
+
+        <div class="fp-auto-height slide">
+            <p>3. Возможные ходы подсвечиваются</p>
+            <img src="imgs/gifs/possible_moves.gif" alt="Пример в приложении" class="gif"/>
+        </div>
+
+        <div class="fp-auto-height slide">
+            <p>4. Сбитая фигура передается в резерв напарнику</p>
+            <img src="imgs/gifs/capture_piece.gif" alt="Пример в приложении" class="gif"/>
+        </div>
+
+        <div class="fp-auto-height slide">
+            <p>5. Фигура из резерва может быть выставлена на доску</p>
+            <img src="imgs/gifs/piece_from_pool.gif" alt="Пример в приложении" class="gif"/>
+        </div>
+    </div>
+
+    <div class="section " id="section_contacts">
+        <div class="intro">
+            <p>Установить приложение</p>
+            <a class="store" href="https://play.google.com/store/apps/details?id=ru.mail.park.bughouse">
+                <img alt="Android app on Google Play" width="172" height="50" src="https://play.google.com/intl/ru_ru/badges/images/generic/ru-play-badge.png">
+            </a>
+            <a class="store" href="">
+                <img alt="Download on the Apple App Store" width="172" height="50" src="https://yastatic.net/promo-pogoda/_/CnMDSoWZH5Joi_6QDKQAr7et3EM.svg">
+            </a>
+            <br>    <br><br>
+            <p>Вы всегда можете связаться с нами</p>
+            <h2>swedish.chess@gmail.com</h2>
+                <br><br>
+            <p>Группа ВКонтакте</p>
+            <a class="store" href="https://vk.com/teamchess">
+                <img alt="vk image" width="100" height="100" src="imgs/vk_icon.png">
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+<!--[if IE]>
+<script type="text/javascript">
+    var console = { log: function() {} };
+</script>
+<![endif]-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/jqueryFullPage.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            sectionsColor: ['#474747', '#474747', '#474747', '#474747', '#474747'],
+            anchors: ['main', 'about', 'rules', 'gameplay','contacts'],
+            scrollingSpeed: 800,
+            menu: '#menu',
+            continuousHorizontal: true
+        });
+    });
+</script>
+

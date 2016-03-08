@@ -1,0 +1,119 @@
+/* Style for our header texts
+    * --------------------------------------- */
+h1{
+    opacity: 1.0;
+    font-size: 5em;
+    color: #fff;
+    margin:0;
+    padding:0;
+}
+
+h2{
+    opacity: 1.0;
+    font-size: 4em;
+    color: #fff;
+    margin:0;
+    padding:0;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    text-align:center;
+}
+
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+.section{
+    background-size: cover;
+}
+.slide{
+    background-size: cover;
+}
+
+/* Defining each section background and styles
+* --------------------------------------- */
+#section_contacts {
+    background-image: url(../imgs/white_chess_background.jpg);
+    padding: 6% 0 0 0;
+}
+#section_contacts h2 {
+    color: #000000;
+}
+#section_contacts p {
+    color: #000000;
+}
+
+#section_about {
+    /*background-image: url(imgs/main_chess_background.jpg);*/
+    /*padding: 6% 0 0 0;*/
+}
+
+#section_gameplay {
+    background-image: url(../imgs/main_chess_background.jpg);
+    padding: 6% 0 0 0;
+}
+#section_main {
+    background-image: url(../imgs/main_chess_background.jpg);
+    padding: 6% 0 0 0;
+}
+#section_main h1{
+    color: #ffffff;
+}
+#section6 h2 {
+    color: #000000;
+}
+#section6 p {
+    color: #000000;
+}
+
+/*Adding background for the slides
+* --------------------------------------- */
+#slide_handshake {
+    background-image: url(../imgs/handshake.jpg);
+}
+#slide_sandglass {
+    background-image: url(../imgs/sandglass);
+}
+#slide_emotional {
+    background-image: url(../imgs/emotional.jpg);
+}
+#slide_gear {
+    background-image: url(../imgs/gear.jpg);
+}
+#slide_piece_captured {
+    background-image: url(../imgs/piece_captured.jpg);
+}
+#slide_law {
+    background-image: url(../imgs/law.jpeg);
+}
+#slide_ckeckmate {
+    background-image: url(../imgs/checkmate.jpg);
+}
+#slide_additional_rules {
+    background-image: url(../imgs/main_chess_background.jpg);
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+    color: #fff;
+}
+
+p{
+    color: #ffffff;
+}
+
+.gif {
+    position: center;
+    right: 0;
+    bottom: 0;
+    top:0;
+    height: 90%;
+
+    background-position: center center;
+    background-size: cover;
+    z-index:3;
+}
+
