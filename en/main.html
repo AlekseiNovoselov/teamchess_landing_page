@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TeamChess</title>
+    <meta name="author" content="TeamChess" />
+    <meta name="description" content="TeamChess - The first mobile android App to play bughouse chess online!" />
+    <meta name="keywords"  content="bughouse chess,double chess,teamchess,bughouse,team chess,mail.ru, team, chess" />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" type="text/css" href="../css/jqueryFullPage.css" />
+    <link rel="stylesheet" type="text/css" href="../css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="../css/my.css" />
+
+    <div class="metrika">
+        <!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=35911845&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/35911845/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:35911845,lang:'ru'});return false}catch(e){}" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter35911845 = new Ya.Metrika({ id:35911845, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/35911845" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    </div>
+
+</head>
+<body>
+
+<ul id="menu">
+    <li data-menuanchor="main"><a href="#main">Main</a></li>
+    <li data-menuanchor="about"><a href="#about">About project</a></li>
+    <li data-menuanchor="rules"><a href="#rules">Rules</a></li>
+    <li data-menuanchor="gameplay"><a href="#gameplay">Gameplay</a></li>
+    <li data-menuanchor="contacts"><a href="#contacts">Download</a></li>
+    <li data-menuanchor="language"><a href="../main.html">Russian language</a></li>
+</ul>
+
+<div id="fullpage">
+    <div class="section" id="section_main">
+        <h1>Bughouse chess</h1>
+        <h2>TeamChess</h2>
+        <p>The first mobile android App to play bughouse chess online!</p>
+    </div>
+    <div class="section" id="section_about">
+        <div class="slide" id="slide_handshake">
+            <div class="intro">
+                <h1>Team</h1>
+                <p>Play with friends in one team and win together!</p>
+            </div>
+        </div>
+        <div class="slide" id="slide_sandglass">
+            <div class="intro">
+                <h1>Fast</h1>
+                <p>Mode of crazy blitz!</p>
+            </div>
+        </div>
+        <div class="slide" id="slide_emotional">
+            <div class="intro">
+                <h1>Emotional</h1>
+                <p>Tension is maintained throughout the game!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section " id="section_rules">
+        <div class="slide" id="slide_gear">
+            <div class="intro">
+                <img src="../imgs/lobby_board.png" alt="simple" />
+                <img src="../imgs/lobby_board.png" alt="simple" />
+                <h1>How does it work?</h1>
+                <div style="text-align: left">
+                    <p>1) 1 game, 2 boards, 4 players, 2 teams;</p>
+                    <p>2) In each team one player uses white pieces, when another uses black ones;</p>
+                    <p>3) There is a time control;</p>
+                    <p>4) Team members have an ability to see position and time on both boards;</p>
+                    <p>5) Team members can communicate during game play for coordination of actions;</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide_piece_captured">
+            <div class="intro">
+                <h1>Main principle</h1>
+                <div style="text-align: left">
+                    <p>1) Captured figure may be passed to a partner in reserve;</p>
+                    <p>2) Figure can be put on the board from reserve instead of a normal move.</p>
+
+                </div>
+                <h1>Win conditions</h1>
+                <div style="text-align: left">
+                    <p>A game is lost when one player gets checkmated, or forfeits on time.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide_law">
+            <div class="intro">
+                <h1>Rules used in the app</h1>
+                <div style="text-align: left">
+                    <p>1) A placed figure can announce both <em>check</em>, and <em>checkmate</em>;</p>
+                    <p>2) A pawn moves to any horizontal, except the first and the last.</p>
+                    <p>3) A pawn can be promoted to another piece of that player\'s choice.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide_ckeckmate">
+            <div class="intro">
+                <h1>Bughouse feature</h1>
+                <div style="text-align: left">
+                    <p>  If the king is checked and can not be moved or protected by another figure from board,
+                        but still can be protected by a figure from the reserve
+                        (even if the player does not have it at the moment), such position is called
+                        not <em>checkmate</em>, but <em>check</em>. In this case defeat is not recorded.
+                        Player may take pause until getting the desired figure, the win of one party
+                        on another board or the expiration of time. The checkmate is recognized only on the position,
+                        where the king can not be covered from checkmate by any valid way
+                        (i.e when the checkmate is given by knight or a checkmate giving figure is
+                        standing next to the king or checkmate is given simultaneously by two figures,
+                        from which it is impossible to cover the king with one stroke).</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide_additional_rules">
+            <div class="intro">
+                <h1>Bughouse feature</h1>
+                <div style="text-align: left">
+                    <p>1) The pawn standing on the second horizontal has the same abilities to move as the pawn
+                        initially standing on its original position: the first time a pawn is moved, it has the option
+                        of advancing two squares; thus it can be captured with a return move of the opponent.</p>
+                    <p>2) The rook placed on a side board of the first horizontal may take part in a castling
+                        as a not yet moved one.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section" id="section_gameplay">
+        <div class="fp-auto-height slide" >
+            <p>1. Start of online game</p>
+            <img src="../imgs/gifs/lobby.gif" alt="Пример в приложении" class="gif" />
+        </div>
+
+        <div class="fp-auto-height slide">
+            <p>2. Observe neighbor board</p>
+            <img src="../imgs/gifs/swipe.gif" alt="Пример в приложении" class="gif"/>
+        </div>
+
+        <div class="fp-auto-height slide">
+            <p>3. Possible moves are highlighted</p>
+            <img src="../imgs/gifs/possible_moves.gif" alt="Пример в приложении" class="gif"/>
+        </div>
+
+        <div class="fp-auto-height slide">
+            <p>4. Captured pieces transferred to the partner reserve</p>
+            <img src="../imgs/gifs/capture_piece.gif" alt="Пример в приложении" class="gif"/>
+        </div>
+
+        <div class="fp-auto-height slide">
+            <p>5. The figure from the reserve can be set on the board</p>
+            <img src="../imgs/gifs/piece_from_pool.gif" alt="Пример в приложении" class="gif"/>
+        </div>
+    </div>
+
+    <div class="section " id="section_contacts">
+        <div class="intro">
+            <p>Download app</p>
+            <a class="store" href="https://play.google.com/store/apps/details?id=ru.mail.park.bughouse">
+                <img alt="Android app on Google Play" width="172" height="50" src="https://play.google.com/intl/ru_ru/badges/images/generic/en-play-badge.png">
+            </a>
+            <a class="store" href="">
+                <img alt="Download on the Apple App Store" width="172" height="50" src="../imgs/app_store.png">
+            </a>
+            <br>    <br><br>
+            <p>You can always contact us</p>
+            <h2>swedish.chess@gmail.com</h2>
+            <br><br>
+            <p>TeamChess community:</p>
+            <a class="store" href="https://www.facebook.com/groups/1712542299009131/">
+                <img alt="fb image" width="100" height="100" src="../imgs/facebook.png">
+            </a>
+            <a class="store" href="https://vk.com/teamchess">
+                <img alt="vk image" width="100" height="100" src="../imgs/vk.png">
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+<!--[if IE]>
+<script type="text/javascript">
+    var console = { log: function() {} };
+</script>
+<![endif]-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="../js/jqueryFullPage.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            sectionsColor: ['#474747', '#474747', '#474747', '#474747', '#474747'],
+            anchors: ['main', 'about', 'rules', 'gameplay','contacts'],
+            scrollingSpeed: 800,
+            menu: '#menu',
+            continuousHorizontal: true
+        });
+    });
+</script>
+
